@@ -52,6 +52,10 @@ footer a {
     color: var(--color-bg);
 }
   
+@media screen and (max-width: 1024px) {
+    
+}
+
 @media screen and (max-width: 600px){
     .permalinks {
         flex-direction: column;
@@ -60,5 +64,9 @@ footer a {
 
     .footer__socials {
         margin-bottom: 2.6rem;
+    }
+
+    footer {
+        transform: translateY(110rem);
     }
 }

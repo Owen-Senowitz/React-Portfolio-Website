@@ -68,9 +68,17 @@ textarea {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
+    .contact__section {
+        transform: translateY(20rem);
+    }
 }
   
 @media screen and (max-width: 600px){
+
+    .contact__section {
+        transform: translateY(120rem);
+    }
+
     .container.contact__container {
         width: var(--container-width-sm);
     }

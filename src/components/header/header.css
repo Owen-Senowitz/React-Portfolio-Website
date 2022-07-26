@@ -67,7 +67,7 @@ header {
     }
 
     .header_socials {
-        transform: translateX(-20px);
+        display: none;
     }
      
     .scroll_down {
