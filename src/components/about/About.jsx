@@ -29,9 +29,11 @@ const About = () => {
               <small>20+ Completed</small>
             </article>
           </div>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, sit ratione. Commodi quisquam odio dignissimos consequuntur doloribus! At, soluta ullam! Voluptatibus impedit quaerat minus reiciendis. Esse sint officiis eligendi corporis.
-          </p>
+            <p>
+              I've spent the past 2022 summer working as a <b>Software Engineer Intern</b> for <b>Lowes</b> on the pricing team. 
+              I learned a ton of new information about Java, Springboot, Kafka, PostgreSQL, and Couchbase. 
+              During the school year at East Carolina University I'm a full time <b>Computer Science</b> student and a part time <b>Assistant Software Engineer</b> for the College of Nursing.
+            </p>
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>
         </div>
       </div>
