@@ -1,5 +1,6 @@
 import React from 'react';
 import Console from '../../assets/console.gif';
+import WeatherApp from '../../assets/weatherapp.jpg';
 
 
 import './portfolio.css';
@@ -8,31 +9,31 @@ const Portfolio = () => {
   const soloProjects = [
     {
       id: 1,
-      title: 'Title',
+      title: 'Crusie Price Checker',
       img: Console,
       link: '',
-      github: 'https://github.com/Owen-Senowitz',
+      github: 'https://github.com/Owen-Senowitz/Crusie-Price-Checker',
     },
     {
       id: 2,
-      title: 'Title',
-      img: Console,
+      title: 'Weather App',
+      img: WeatherApp,
       link: '',
-      github: 'https://github.com/Owen-Senowitz',
+      github: 'https://github.com/Owen-Senowitz/Weather-App',
     },
     {
       id: 3,
-      title: 'Title',
+      title: 'Card Deck',
       img: Console,
       link: '',
-      github: 'https://github.com/Owen-Senowitz',
+      github: 'https://github.com/Owen-Senowitz/Card-Deck',
     },
     {
       id: 4,
-      title: 'Title',
+      title: 'Chat Application',
       img: Console,
       link: '',
-      github: 'https://github.com/Owen-Senowitz',
+      github: 'https://github.com/Owen-Senowitz/Chat-Application',
     },
     {
       id: 5,
