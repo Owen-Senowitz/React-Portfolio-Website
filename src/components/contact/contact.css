@@ -69,14 +69,14 @@ textarea {
         gap: 2rem;
     }
     .contact__section {
-        transform: translateY(20rem);
+        transform: translateY(40rem);
     }
 }
   
 @media screen and (max-width: 600px){
 
     .contact__section {
-        transform: translateY(125rem);
+        transform: translateY(170rem);
     }
 
     .container.contact__container {
