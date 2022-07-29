@@ -76,7 +76,7 @@ textarea {
 @media screen and (max-width: 600px){
 
     .contact__section {
-        transform: translateY(120rem);
+        transform: translateY(125rem);
     }
 
     .container.contact__container {
