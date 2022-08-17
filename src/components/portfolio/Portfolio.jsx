@@ -60,7 +60,7 @@ const Portfolio = () => {
       technologies: 'Java',
       description: 'Java Program that reads the book information from catalog.txt and acts as a book catalog interface',
       link: '',
-      github: 'https://github.com/Owen-Senowitz/Book-Catalog',
+      github: 'https://github.com/Owen-Senowitz/Java-Book-Catalog',
     },
   ];
   
