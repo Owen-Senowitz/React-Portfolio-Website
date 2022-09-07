@@ -1,6 +1,6 @@
 # React Portfolio Website
 
-This project is live at [Owen's Portfolio](https://www.owen-senowitz.com).
+This project is live at https://www.owen-senowitz.com
 
 ## Available Scripts
 
