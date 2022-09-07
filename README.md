@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# React Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is live at [Owen's Portfolio](https://www.owen-senowitz.com).
 
 ## Available Scripts
 
