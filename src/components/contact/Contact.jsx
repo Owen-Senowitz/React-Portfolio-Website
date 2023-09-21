@@ -5,6 +5,7 @@ import "./contact.css";
 
 const Contact = () => {
 	const formRef = useRef();
+
 	const handleSubmit = (e) => {
 		e.preventDefault();
 
@@ -18,14 +19,19 @@ const Contact = () => {
 			.then(
 				(result) => {
 					console.log(result.text);
+					alert("Email sent successfully!");
 				},
 				(error) => {
 					console.log(error.text);
+					alert(
+						"There was an error sending the email. Please try again later."
+					);
 				}
 			);
 
 		e.target.reset();
 	};
+
 	return (
 		<section id="contact" className="contact__section">
 			<h5>Get In Touch</h5>
