@@ -1,36 +1,11 @@
-import React, { useRef } from "react";
-import emailjs from "emailjs-com";
+import React from "react";
 import { MdOutlineEmail } from "react-icons/md";
+import { FaLinkedin } from "react-icons/fa";
 import "./contact.css";
 
 const Contact = () => {
-	const formRef = useRef();
-
-	const handleSubmit = (e) => {
-		e.preventDefault();
-
-		emailjs
-			.sendForm(
-				"service_kuat8xs",
-				"template_25c35zd",
-				formRef.current,
-				"user_fTmdSUwNIvHHeVKciQqUy"
-			)
-			.then(
-				(result) => {
-					console.log(result.text);
-					alert("Email sent successfully!");
-				},
-				(error) => {
-					console.log(error.text);
-					alert(
-						"There was an error sending the email. Please try again later."
-					);
-				}
-			);
-
-		e.target.reset();
-	};
+	const email = "owen.senowitz@gmail.com";
+	const linkedinUrl = "https://www.linkedin.com/in/owen-senowitz/";
 
 	return (
 		<section id="contact" className="contact__section">
@@ -41,33 +16,22 @@ const Contact = () => {
 					<article className="contact__option">
 						<MdOutlineEmail className="contact__option-icon" />
 						<h4>Email</h4>
-						<h5>osenowitz.work@gmail.com</h5>
-						<a href="mailto:osenowitz.work@gmail.com">Send a message</a>
+						<h5>{email}</h5>
+						<a href={`mailto:${email}`}>Send a message</a>
+					</article>
+					<article className="contact__option">
+						<FaLinkedin className="contact__option-icon" />
+						<h4>LinkedIn</h4>
+						<h5>owen-senowitz</h5>
+						<a
+							href={linkedinUrl}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Connect on LinkedIn
+						</a>
 					</article>
 				</div>
-				<form ref={formRef} onSubmit={handleSubmit}>
-					<input
-						type="text"
-						placeholder="Your Full Name"
-						name="user_name"
-						required
-					/>
-					<input
-						type="text"
-						placeholder="Your Email"
-						name="user_email"
-						required
-					/>
-					<textarea
-						placeholder="Your message"
-						rows="7"
-						name="message"
-						required
-					></textarea>
-					<button type="submit" className="btn btn-primary">
-						Send Message
-					</button>
-				</form>
 			</div>
 		</section>
 	);

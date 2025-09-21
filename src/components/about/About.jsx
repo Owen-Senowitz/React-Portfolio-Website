@@ -5,6 +5,8 @@ import { FaAward } from "react-icons/fa";
 import { VscFolderLibrary } from "react-icons/vsc";
 
 const About = () => {
+	const startYear = 2021;
+	const currentYear = new Date().getFullYear();
 	return (
 		<section id="about">
 			<h5>Get To Know</h5>
@@ -21,7 +23,7 @@ const About = () => {
 						<article className="about_card">
 							<FaAward className="about_icon" />
 							<h5>Experience</h5>
-							<small>1+ Years</small>
+							<small>{currentYear - startYear}+ Years</small>
 						</article>
 						<article className="about_card">
 							<VscFolderLibrary className="about_icon" />
@@ -30,13 +32,21 @@ const About = () => {
 						</article>
 					</div>
 					<p>
-						I've spent the past 2022 summer working as a{" "}
-						<b>Software Engineer Intern</b> for <b>Lowes</b> on the pricing
-						team. I learned a ton of new information about Java, Springboot,
-						Kafka, PostgreSQL, and Couchbase. During the school year at East
-						Carolina University I'm a full time <b>Computer Science</b> student
-						and a part time <b>Assistant Software Engineer</b> for the College
-						of Nursing.
+						I’m a Software Engineer with a focus on designing and
+						building <b>scalable</b> backend APIs that support{" "}
+						<b>high-traffic</b> systems. I work with <b>Java</b> and{" "}
+						<b>C#</b> as my primary languages, and I have experience
+						with event-driven platforms such as <b>Kafka</b> and
+						databases including <b>MongoDB</b>, <b>PostgreSQL</b>,
+						and <b>MySQL</b>. I enjoy solving complex problems,
+						optimizing performance, and ensuring the systems I build
+						can scale as demand grows. Alongside my work, I am
+						pursuing a <b>Master’s degree in Computer Science</b> at
+						East Carolina University. My graduate studies allow me
+						to deepen my knowledge in areas like{" "}
+						<b>machine learning</b>, <b>algorithms</b>, and{" "}
+						<b>artificial intelligence</b>, which I bring back into
+						my engineering practice.
 					</p>
 					<a href="#contact" className="btn btn-primary">
 						Let's Talk
